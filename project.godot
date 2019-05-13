@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "RichTextEffect",
+"class": "RichTextGhost",
+"language": "GDScript",
+"path": "res://richtexteffects/ghost.gd"
+}, {
+"base": "RichTextEffect",
+"class": "RichTextMatrix",
+"language": "GDScript",
+"path": "res://richtexteffects/matrix.gd"
+}, {
+"base": "RichTextEffect",
+"class": "RichTextPulse",
+"language": "GDScript",
+"path": "res://richtexteffects/pulse.gd"
+} ]
+_global_script_class_icons={
+"RichTextGhost": "",
+"RichTextMatrix": "",
+"RichTextPulse": ""
+}
+
+[application]
+
+config/name="Rich-Text-Plus"
+run/main_scene="res://scenes/TestEnvironment.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

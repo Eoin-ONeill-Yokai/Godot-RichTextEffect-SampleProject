@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lttp_se_message_fin.wav-2ada7038193bcb4879bf762d1ad5f7ef.sample"
+
+[deps]
+
+source_file="res://assets/lttp_se_message_fin.wav"
+dest_files=[ "res://.import/lttp_se_message_fin.wav-2ada7038193bcb4879bf762d1ad5f7ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

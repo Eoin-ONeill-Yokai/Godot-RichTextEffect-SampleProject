@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://richtexteffects/matrix.gd" type="Script" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+func _ready():
+	var span = $RichTextLabel.get_span(\"wolf\")
+	print(span)
+"
+
+[sub_resource type="RichTextEffect" id=2]
+script = ExtResource( 1 )
+
+[node name="SpanTestingScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 70.4203
+margin_top = 57.2165
+margin_right = 352.42
+margin_bottom = 179.216
+bbcode_enabled = true
+bbcode_text = "[span id=\"wolf\"][color=red]HELLO[/color] there. [matrix]Matrix[/matrix][/span]"
+text = "HELLO there. Matrix"
+custom_effects = [ SubResource( 2 ) ]
