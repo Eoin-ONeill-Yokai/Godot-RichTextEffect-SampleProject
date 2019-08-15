@@ -7,9 +7,9 @@ func _init():
 	resource_name = "RichTextPulse"
 
 func _process_custom_fx(char_fx):
-	var color = char_fx.get_or("color", char_fx.color)
-	var height = char_fx.get_or("height", 0.0)
-	var freq = char_fx.get_or("freq", 2.0)
+	var color = char_fx.get_value_or("color", char_fx.color)
+	var height = char_fx.get_value_or("height", 0.0)
+	var freq = char_fx.get_value_or("freq", 2.0)
 	
 	var sinedTime = (sin(char_fx.elapsed_time * freq) + 1.0) / 2.0
 	var y_off = sinedTime * height

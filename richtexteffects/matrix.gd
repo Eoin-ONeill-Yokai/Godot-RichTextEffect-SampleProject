@@ -7,9 +7,9 @@ func _init():
 	resource_name = "RichTextMatrix"
 
 func _process_custom_fx(char_fx):
-	var clear_time = char_fx.get_or("clean", 2.0)
-	var dirty_time = char_fx.get_or("dirty", 1.0)
-	var text_span = char_fx.get_or("span", 50)
+	var clear_time = char_fx.get_value_or("clean", 2.0)
+	var dirty_time = char_fx.get_value_or("dirty", 1.0)
+	var text_span = char_fx.get_value_or("span", 50)
 	
 	var value = char_fx.character
 	
