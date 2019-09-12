@@ -183,10 +183,12 @@ autostart = true
 script = ExtResource( 10 )
 
 [node name="SpeakSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 512, 0 )
 stream = SubResource( 5 )
 script = ExtResource( 11 )
 
 [node name="FinishSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 512, 0 )
 stream = ExtResource( 8 )
 script = ExtResource( 11 )
 [connection signal="example_changed" from="." to="HSplitContainer/BBCodePanel/MarginContainer/VBoxContainer/BBCodeSRC" method="_on_RTLTestingEnvironment_example_changed"]
