@@ -35,6 +35,9 @@ random_pitch = 1.06
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 tornado = "[center]Here's a look at the [tornado radius=5 freq=5]tornado[/tornado] text effect.[/center]"
 wave = "[center]Here's a look at the 
 [wave amp=50 freq=2]wave text effect[/wave].[/center]"
@@ -170,6 +173,9 @@ rect_clip_content = false
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/font_color_shadow = Color( 0.0627451, 0.054902, 0.054902, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
 bbcode_enabled = true
 bbcode_text = "[wave freq=20]Hello [pulse freq=5 height=4 color=#F55][matrix]World[/matrix][/pulse][/wave] A [wave]la li lu le lo[/wave]."
 text = "Hello World A la li lu le lo."

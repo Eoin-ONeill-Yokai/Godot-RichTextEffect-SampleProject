@@ -6,7 +6,7 @@ var bbcode = "pulse"
 func _init():
 	resource_name = "RichTextPulse"
 
-func _process_custom_fx(char_fx):
+func _process_custom_fx(char_fx : CharFXTransform) -> bool:
 	var color = char_fx.get_value_or("color", char_fx.color)
 	var height = char_fx.get_value_or("height", 0.0)
 	var freq = char_fx.get_value_or("freq", 2.0)
