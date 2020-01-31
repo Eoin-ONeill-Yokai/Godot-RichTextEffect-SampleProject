@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "RichTextEffect",
+"class": "HideTextFX",
+"language": "GDScript",
+"path": "res://richtexteffects/hide.gd"
+}, {
+"base": "RichTextEffect",
 "class": "RichTextGhost",
 "language": "GDScript",
 "path": "res://richtexteffects/ghost.gd"
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://richtexteffects/pulse.gd"
 } ]
 _global_script_class_icons={
+"HideTextFX": "",
 "RichTextGhost": "",
 "RichTextMatrix": "",
 "RichTextPulse": ""
