@@ -1,4 +1,4 @@
-## Godot: Rich Text Effect Testing Project:
+## Godot: `RichTextEffect` Testing Project:
 This is a test project for the new Godot feature `RichTextEffect` ([PR](https://github.com/godotengine/godot/pull/23658)) which is now released with Godot 3.2. This project serves as a test bed for the `RichTextEffects` feature that has been added to `RichTextLabel`. It also helps to test for regressions or inconsistencies in `RichTextLabel` behavior. For more details regarding the `RichTextEffect` feature, please click the link to the pull request above.
 
 ## Installation (with Godot 3.2+):
